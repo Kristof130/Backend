@@ -1,0 +1,14 @@
+namespace GameStore.DTOS;
+
+public record class BerlesDto
+(
+int Gokart_Id,
+
+int Berlo_Id,
+
+DateOnly KezdoDatum,
+
+int Berles_hossza,
+
+int Berles_ID
+);
