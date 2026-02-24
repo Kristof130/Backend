@@ -9,25 +9,27 @@ namespace GameStore.Endpoints;
 
 public static class BerloEndpoints
 {
-const string GetGameEndpointName = "GetGame"; 
-    public static RouteGroupBuilder MapGamesEndpoints(this WebApplication app)
+const string GetBerloEndpointName = "GetBerlo"; 
+    public static RouteGroupBuilder MapBerloEndpoints(this WebApplication app)
     {
-        //Get /games
-        var group = app.MapGroup("games").WithParameterValidation();
+        //Get /berlo
+        var group = app.MapGroup("berlo").WithParameterValidation();
 
         group.MapGet("/", async (GokartkolcsonzoContext dbContext) =>
          await dbContext.Berlo.Select(Berlo => berlo.ToGameSummaryDto())
                         .AsNoTracking().ToListAsync());
-          
-        // Get /games/1
+
+        
+        // Get /berlo/1
+        /*
         group.MapGet("/{id}", async (int id, GokartkolcsonzoContext dbContext) =>
         {
             Berlo? berlo = await dbContext.Berlo.FindAsync(id);
 
             return berlo is null ? Results.NotFound() : Results.Ok(berlo.ToGameDetailsDto());
         });
-
-        //Post /games
+*/
+        //Post /berlo
         group.MapPost("/", async (CreateBerloDto newBerlo, GokartkolcsonzoContext dbContext) =>
         {
             Berlo berlo = newBerlo.ToEntity();
@@ -35,7 +37,7 @@ const string GetGameEndpointName = "GetGame";
             dbContext.Berlo.Add(berlo);
             await dbContext.SaveChangesAsync();
 
-        return Results.CreatedAtRoute(GetGameEndpointName, new { id = berlo.Berlo_Id }, berlo.ToGameDetailsDto());
+        return Results.CreatedAtRoute(GetBerloEndpointName, new { id = berlo.Berlo_Id }, berlo.ToBerloDto());
         });
 
         
