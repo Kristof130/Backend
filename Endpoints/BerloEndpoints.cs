@@ -16,7 +16,7 @@ const string GetBerloEndpointName = "GetBerlo";
         var group = app.MapGroup("berlo").WithParameterValidation();
 
         group.MapGet("/", async (GokartkolcsonzoContext dbContext) =>
-         await dbContext.Berlo.Select(Berlo => berlo.ToGameSummaryDto())
+         await dbContext.Berlo.Select(Berlo => Berlo.ToBerloDto())
                         .AsNoTracking().ToListAsync());
 
         
