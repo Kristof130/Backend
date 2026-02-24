@@ -17,12 +17,12 @@ public static class GokartMapping
         };
     } */  
 
-     public static Gokart ToEntity(this UpdateGokartDto game, int id)
+     public static Gokart ToEntity(this UpdateGokartDto gokart, int id)
     {
         return new Gokart()
         {   
             Gokart_Id = id,
-            Foglalt_e = game.Foglalt_e
+            Foglalt_e = gokart.Foglalt_e
         };
     } 
 
@@ -30,22 +30,22 @@ public static class GokartMapping
 
      public static GokartDto ToGokartDto(this Gokart gokart)
     {
-        return  new GokartDto()
-        {
-            Gokart_Id = gokart.Gokart_Id,
-            Gyarto = gokart.Gyarto,
-            Tipus = gokart.Tipus,
-            Evjarat = gokart.Evjarat,
-            VazTipusa = gokart.VazTipusa,
-            Tomeg = gokart.Tomeg,
-            Hossz = gokart.Hossz,
-            Szelesseg = gokart.Szelesseg,
-            Tengelytav = gokart.Tengelytav,
-            MotorTipusa = gokart.MotorTipusa,
-            HajtasModja = gokart.HajtasModja,
-            ValtoTipusa = gokart.ValtoTipusa,
-            Foglalt_e = gokart.Foglalt_e,
-            NapiAr = gokart.NapiAr
-        };
-    }
-}
+        return  new(
+                 gokart.Gokart_Id,
+                 gokart.Gyarto,
+                 gokart.Tipus,
+                 gokart.Evjarat,
+                 gokart.VazTipusa,
+                 gokart.Tomeg,
+                 gokart.Hossz,
+                 gokart.Szelesseg,
+                 gokart.Tengelytav,
+                 gokart.MotorTipusa,
+                 gokart.HajtasModja,
+                 gokart.ValtoTipusa,
+                 gokart.Foglalt_e,
+                 gokart.NapiAr
+             );
+        }
+   }
+
