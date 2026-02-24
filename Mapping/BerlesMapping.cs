@@ -36,8 +36,8 @@ public static class BerlesMapping
         return new BerlesDto(
                 berles.Berlo_Id,
                 berles.Gokart_Id,
-                berles.Berles_hossza,
                 berles.KezdoDatum,
+                berles.Berles_hossza,
                 berles.Berles_ID
             );
     }
