@@ -13,3 +13,4 @@ public int Berles_ID { get; set; }
 
 }
 //tej
+//tejföl
