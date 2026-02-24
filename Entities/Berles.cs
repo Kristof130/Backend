@@ -12,3 +12,4 @@ public int Berles_hossza { get; set; }
 public int Berles_ID { get; set; }
 
 }
+//tej
