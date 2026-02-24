@@ -30,7 +30,7 @@ public static class GokartMapping
 
      public static GokartDto ToGokartDto(this Gokart gokart)
     {
-        return  new Gokart()
+        return  new GokartDto()
         {
             Gokart_Id = gokart.Gokart_Id,
             Gyarto = gokart.Gyarto,
