@@ -3178,11 +3178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\program valami html vizsga tejföl feladat\\GameStore\\GameStore.csproj",
+      "projectUniqueName": "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj",
       "projectName": "GameStore",
-      "projectPath": "Z:\\program valami html vizsga tejföl feladat\\GameStore\\GameStore.csproj",
+      "projectPath": "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj",
       "packagesPath": "C:\\Users\\pkristof06\\.nuget\\packages\\",
-      "outputPath": "Z:\\program valami html vizsga tejföl feladat\\GameStore\\obj\\",
+      "outputPath": "Z:\\tejfolvizsga\\GameStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

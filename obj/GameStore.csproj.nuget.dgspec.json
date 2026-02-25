@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "z:\\program valami html vizsga tejföl feladat\\GameStore\\GameStore.csproj": {}
+    "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj": {}
   },
   "projects": {
-    "z:\\program valami html vizsga tejföl feladat\\GameStore\\GameStore.csproj": {
+    "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "z:\\program valami html vizsga tejföl feladat\\GameStore\\GameStore.csproj",
+        "projectUniqueName": "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj",
         "projectName": "GameStore",
-        "projectPath": "z:\\program valami html vizsga tejföl feladat\\GameStore\\GameStore.csproj",
+        "projectPath": "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj",
         "packagesPath": "C:\\Users\\pkristof06\\.nuget\\packages\\",
-        "outputPath": "z:\\program valami html vizsga tejföl feladat\\GameStore\\obj\\",
+        "outputPath": "Z:\\tejfolvizsga\\GameStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
