@@ -29,3 +29,12 @@ c:\Users\gjozsef.SZIKSZI\GameStore\obj\Debug\net9.0\GameStore.AssemblyInfo.cs
 c:\Users\gjozsef.SZIKSZI\GameStore\obj\Debug\net9.0\GameStore.csproj.CoreCompileInputs.cache
 c:\Users\gjozsef.SZIKSZI\GameStore\obj\Debug\net9.0\GameStore.MvcApplicationPartsAssemblyInfo.cs
 c:\Users\gjozsef.SZIKSZI\GameStore\obj\Debug\net9.0\GameStore.MvcApplicationPartsAssemblyInfo.cache
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.csproj.AssemblyReference.cache
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\rpswa.dswa.cache.json
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.GeneratedMSBuildEditorConfig.editorconfig
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.AssemblyInfoInputs.cache
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.AssemblyInfo.cs
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.csproj.CoreCompileInputs.cache
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.MvcApplicationPartsAssemblyInfo.cs
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.MvcApplicationPartsAssemblyInfo.cache
+z:\program valami html vizsga tejföl feladat\GameStore\obj\Debug\net9.0\GameStore.sourcelink.json
