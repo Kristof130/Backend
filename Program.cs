@@ -9,8 +9,9 @@ builder.Services.AddDbContext<GokartkolcsonzoContext>(options =>
     options.UseMySql(connString, ServerVersion.AutoDetect(connString)));
 var app = builder.Build();
 
-app.MapGamesEndpoints(); 
-app.MapGenresEndpoints();
+app.MapBerlesEndpoints(); 
+app.MapBerloEndpoints();
+app.MapGokartEndpoints();
 
 await app.MigrateDB();
 

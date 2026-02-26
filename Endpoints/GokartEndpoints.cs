@@ -10,7 +10,7 @@ namespace GameStore.Endpoints;
 public static class GokartEndpoints
 {
 const string GetGameEndpointName = "GetGame"; 
-    public static RouteGroupBuilder MapGamesEndpoints(this WebApplication app)
+    public static RouteGroupBuilder MapGokartEndpoints(this WebApplication app)
     {
         //Get /games
         var group = app.MapGroup("games").WithParameterValidation();
