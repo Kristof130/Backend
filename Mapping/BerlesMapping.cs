@@ -34,11 +34,12 @@ public static class BerlesMapping
     public static BerlesDto ToBerlesDto(this Berles berles)
     {
         return new BerlesDto(
+                berles.ID,
                 berles.Berlo_Id,
                 berles.Gokart_Id,
                 berles.KezdoDatum,
-                berles.Berles_hossza,
-                berles.Berles_ID
+                berles.Berles_hossza
+                
             );
     }
 }

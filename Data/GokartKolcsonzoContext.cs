@@ -7,7 +7,7 @@ public class GokartkolcsonzoContext(DbContextOptions<GokartkolcsonzoContext> opt
 {
     public DbSet<Berles> Berles => Set<Berles>();
     public DbSet<Berlo> Berlo => Set<Berlo>();
-    public DbSet<Gokart> Gokart => Set<Gokart>();
+    public DbSet<Gokartok> Gokartok => Set<Gokartok>();
 
     
 }

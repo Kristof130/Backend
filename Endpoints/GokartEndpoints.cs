@@ -16,13 +16,13 @@ const string GetGameEndpointName = "GetGame";
         var group = app.MapGroup("games").WithParameterValidation();
 
         group.MapGet("/", async (GokartkolcsonzoContext dbContext) =>
-         await dbContext.Gokart.Select(gokart => gokart.ToGokartDto())
+         await dbContext.Gokartok.Select(gokart => gokart.ToGokartDto())
                         .AsNoTracking().ToListAsync());
           
         // Get /games/1
         group.MapGet("/{id}", async (int id, GokartkolcsonzoContext dbContext) =>
         {
-            Gokart? gokart = await dbContext.Gokart.FindAsync(id);
+            Gokartok? gokart = await dbContext.Gokartok.FindAsync(id);
 
             return gokart is null ? Results.NotFound() : Results.Ok(gokart.ToGokartDto());
         });
@@ -31,7 +31,7 @@ const string GetGameEndpointName = "GetGame";
         // Put /games/1
         group.MapPut("/{id}", async (int id, UpdateGokartDto updatedGokart, GokartkolcsonzoContext dbContex) =>
         {
-            var existingGokart = await dbContex.Gokart.FindAsync(id);
+            var existingGokart = await dbContex.Gokartok.FindAsync(id);
             if (existingGokart is null)
             {
                 return Results.NotFound();
@@ -46,7 +46,7 @@ const string GetGameEndpointName = "GetGame";
 
         group.MapDelete("/{id}", async (int id,GokartkolcsonzoContext dbContex) =>
         {
-           await dbContex.Gokart.Where(gokart => gokart.Gokart_Id == id).ExecuteDeleteAsync();
+           await dbContex.Gokartok.Where(gokart => gokart.Id == id).ExecuteDeleteAsync();
 
             return Results.NoContent();
         });

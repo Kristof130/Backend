@@ -2,7 +2,7 @@ namespace GameStore.DTOS;
 
 public record class GokartDto
 (
-int Gokart_Id,
+int Id,
 string Gyarto,
 string Tipus,
 DateOnly Evjarat,

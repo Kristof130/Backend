@@ -35,7 +35,7 @@ const string GetberlesEndpointName = "GetBerles";
             dbContext.Berles.Add(berles);
             await dbContext.SaveChangesAsync();
 
-            return Results.CreatedAtRoute(GetberlesEndpointName, new { id = berles.Berles_ID }, berles.ToBerlesDto());
+            return Results.CreatedAtRoute(GetberlesEndpointName, new { id = berles.ID }, berles.ToBerlesDto());
         });
 
     
@@ -44,7 +44,7 @@ const string GetberlesEndpointName = "GetBerles";
 
         group.MapDelete("/{id}", async (int id,GokartkolcsonzoContext dbContex) =>
         {
-           await dbContex.Berles.Where(berles => berles.Berles_ID == id).ExecuteDeleteAsync();
+           await dbContex.Berles.Where(berles => berles.ID == id).ExecuteDeleteAsync();
 
             return Results.NoContent();
         });

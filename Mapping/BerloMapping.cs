@@ -32,7 +32,7 @@ public static Berlo ToEntity(this CreateBerloDto berlo)
      public static BerloDto ToBerloDto(this Berlo berlo)
     {
         return new BerloDto(
-                berlo.Berlo_Id,
+                berlo.id,
                 berlo.Berlo_Neve
             );
     }

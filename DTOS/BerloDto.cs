@@ -2,6 +2,6 @@ namespace GameStore.DTOS;
 
 public record class BerloDto
 (
-int Berlo_Id,
+int id,
 string Berlo_Neve
 );

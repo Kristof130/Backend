@@ -17,21 +17,21 @@ public static class GokartMapping
         };
     } */  
 
-     public static Gokart ToEntity(this UpdateGokartDto gokart, int id)
+     public static Gokartok  ToEntity(this UpdateGokartDto gokart, int id)
     {
-        return new Gokart()
+        return new Gokartok()
         {   
-            Gokart_Id = id,
+            Id = id,
             Foglalt_e = gokart.Foglalt_e
         };
     } 
 
     
 
-     public static GokartDto ToGokartDto(this Gokart gokart)
+     public static GokartDto ToGokartDto(this Gokartok gokart)
     {
         return  new(
-                 gokart.Gokart_Id,
+                 gokart.Id,
                  gokart.Gyarto,
                  gokart.Tipus,
                  gokart.Evjarat,
