@@ -1,11 +1,11 @@
 GET http://localhost:5225/games
 
 ###
-GET http://localhost:5225/games/1
+GET http://localhost:3306/gokart_kolcsonzo/gokartok/1
 
 
 ###
-POST http://localhost:5225/games/
+POST http://localhost:3306/gokart_kolcsonzo/
 Content-Type: application/json
 {
     "name": "Minecraft",
