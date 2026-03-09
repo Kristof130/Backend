@@ -9,11 +9,11 @@ namespace GameStore.Endpoints;
 
 public static class GokartEndpoints
 {
-const string GetGameEndpointName = "GetGame"; 
+const string GetGokartEndpointName = "GetGokart"; 
     public static RouteGroupBuilder MapGokartEndpoints(this WebApplication app)
     {
-        //Get /games
-        var group = app.MapGroup("games").WithParameterValidation();
+        //Get /gokarts
+        var group = app.MapGroup("gokarts").WithParameterValidation();
 
         group.MapGet("/", async (GokartkolcsonzoContext dbContext) =>
          await dbContext.Gokartok.Select(gokart => gokart.ToGokartDto())
