@@ -12,8 +12,9 @@ int Hossz,
 int Szelesseg,
 int Tengelytav,
 string MotorTipusa,
+int Teljesitmeny,
 string HajtasModja,
 string ValtoTipusa,
-bool Foglalt_e,
+int Foglalt_e,
 int NapiAr
 );

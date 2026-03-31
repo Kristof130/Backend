@@ -12,14 +12,14 @@ public static class GokartEndpoints
 const string GetGokartEndpointName = "GetGokart"; 
     public static RouteGroupBuilder MapGokartEndpoints(this WebApplication app)
     {
-        //Get /gokarts
-        var group = app.MapGroup("gokarts").WithParameterValidation();
+        //Get /gokartok
+        var group = app.MapGroup("gokartok").WithParameterValidation();
 
         group.MapGet("/", async (GokartkolcsonzoContext dbContext) =>
          await dbContext.Gokartok.Select(gokart => gokart.ToGokartDto())
                         .AsNoTracking().ToListAsync());
-          
-        // Get /games/1
+
+        // Get /gokartok/1
         group.MapGet("/{id}", async (int id, GokartkolcsonzoContext dbContext) =>
         {
             Gokartok? gokart = await dbContext.Gokartok.FindAsync(id);
@@ -28,7 +28,7 @@ const string GetGokartEndpointName = "GetGokart";
         });
 
 
-        // Put /games/1
+        // Put /gokartok/1
         group.MapPut("/{id}", async (int id, UpdateGokartDto updatedGokart, GokartkolcsonzoContext dbContex) =>
         {
             var existingGokart = await dbContex.Gokartok.FindAsync(id);

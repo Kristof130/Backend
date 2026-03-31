@@ -17,12 +17,25 @@ public static class GokartMapping
         };
     } */  
 
-     public static Gokartok  ToEntity(this UpdateGokartDto gokart, int id)
+     public static Gokartok ToEntity(this UpdateGokartDto gokart, int id)
     {
         return new Gokartok()
         {   
             Id = id,
-            Foglalt_e = gokart.Foglalt_e
+            Gyarto = gokart.Gyarto,
+            Tipus = gokart.Tipus,
+            Evjarat = gokart.Evjarat,
+            VazTipusa = gokart.VazTipusa,
+            Tomeg = gokart.Tomeg,
+            Hossz = gokart.Hossz,
+            Szelesseg = gokart.Szelesseg,
+            Tengelytav = gokart.Tengelytav,
+            MotorTipusa = gokart.MotorTipusa,
+            Teljesitmeny = gokart.Teljesitmeny,
+            HajtasModja = gokart.HajtasModja,
+            ValtoTipusa = gokart.ValtoTipusa,
+            Foglalt_e = gokart.Foglalt_e,
+            NapiAr = gokart.NapiAr
         };
     } 
 
@@ -41,6 +54,7 @@ public static class GokartMapping
                  gokart.Szelesseg,
                  gokart.Tengelytav,
                  gokart.MotorTipusa,
+                 gokart.Teljesitmeny,
                  gokart.HajtasModja,
                  gokart.ValtoTipusa,
                  gokart.Foglalt_e,

@@ -11,32 +11,32 @@ public static class BerlesMapping
     {
         return new Berles()
         {
-            Berlo_Id = berles.Berlo_Id,
             Gokart_Id = berles.Gokart_Id,
+            Berlo_Id = berles.Berlo_Id,
             Berles_hossza = berles.Berles_hossza,
             KezdoDatum = berles.KezdoDatum
         };
     }   
 
-    /* public static Game ToEntity(this UpdateGamedto game, int id)
+     public static Berles ToEntity(this UpdateBerlesDto berles, int id)
     {
-        return new Game()
+        return new Berles()
         {   
-            Id = id,
-            Name = game.Name,
-            GenreId = game.GenreId,
-            Price = game.Price,
-            ReleaseDate = game.ReleaseDate
+            ID = id,
+            Gokart_Id = berles.Gokart_Id,
+            Berlo_Id = berles.Berlo_Id,
+            Berles_hossza = berles.Berles_hossza,
+            KezdoDatum = berles.KezdoDatum
         };
-    }*/
+    }
      
 
     public static BerlesDto ToBerlesDto(this Berles berles)
     {
         return new BerlesDto(
                 berles.ID,
-                berles.Berlo_Id,
                 berles.Gokart_Id,
+                berles.Berlo_Id,                
                 berles.KezdoDatum,
                 berles.Berles_hossza
                 

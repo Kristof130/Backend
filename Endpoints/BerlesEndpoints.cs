@@ -37,7 +37,19 @@ const string GetberlesEndpointName = "GetBerles";
 
             return Results.CreatedAtRoute(GetberlesEndpointName, new { id = berles.ID }, berles.ToBerlesDto());
         });
+        // Put /berles/1
+        group.MapPut("/{id}", async (int id, UpdateBerlesDto updatedBerles, GokartkolcsonzoContext dbContext) =>
+        {
+            var existingBerles = await dbContext.Berles.FindAsync(id);
+            if (existingBerles is null)
+            {
+                return Results.NotFound();
+            }
 
+            dbContext.Entry(existingBerles).CurrentValues.SetValues(updatedBerles.ToEntity(id));
+            await dbContext.SaveChangesAsync();
+            return Results.NoContent();
+        });
     
 
         // Delete /berles/1

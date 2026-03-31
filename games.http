@@ -1,11 +1,8 @@
-GET http://localhost:5225/games
-
+GET http://localhost:5225/berlo
 ###
-GET http://localhost:3306/gokart_kolcsonzo/gokartok/1
-
-
+GET http://localhost:5225/berles/2
 ###
-POST http://localhost:3306/gokart_kolcsonzo/
+POST http://localhost:3306/games/
 Content-Type: application/json
 {
     "name": "Minecraft",
@@ -27,4 +24,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:5225/games/2
+DELETE http://localhost:5225/berles/13
