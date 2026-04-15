@@ -1,4 +1,4 @@
-GET http://localhost:5225/berlo
+GET http://localhost:5225/berles
 ###
 GET http://localhost:5225/berles/2
 ###
