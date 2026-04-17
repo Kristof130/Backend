@@ -1,9 +1,9 @@
 using System;
-using GameStore.DTOS;
-using GameStore.Entities;
+using Gokart.DTOS;
+using Gokart.Entities;
 
 
-namespace GameStore.Mapping;
+namespace Gokart.Mapping;
 
 public static class BerlesMapping
 {

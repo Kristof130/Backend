@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace GameStore.Data;
+namespace Gokart.Data;
 
 public static class DataExtensions
 {

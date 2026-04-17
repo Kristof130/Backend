@@ -1,4 +1,4 @@
-namespace GameStore.DTOS;
+namespace Gokart.DTOS;
 //Template!!!!!!!!!!!!!!!!!!!!!!!!!
 public record class GameDetailsDto(
     int Id,

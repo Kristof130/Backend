@@ -1,6 +1,6 @@
 
 
-namespace GameStore.Entities;
+namespace Gokart.Entities;
 
 public class Berles 
 {

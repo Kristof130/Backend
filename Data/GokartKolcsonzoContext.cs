@@ -1,7 +1,7 @@
-using GameStore.Entities;
+using Gokart.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace GameStore.Data;
+namespace Gokart.Data;
 
 public class GokartkolcsonzoContext(DbContextOptions<GokartkolcsonzoContext> options) : DbContext(options)
 {

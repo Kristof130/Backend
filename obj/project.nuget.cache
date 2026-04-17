@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iPqcg6pVZqY=",
+  "dgSpecHash": "k//qjs9IR64=",
   "success": true,
-  "projectFilePath": "Z:\\tejfolvizsga\\GameStore\\GameStore.csproj",
+  "projectFilePath": "Z:\\tejfolvizsga\\GokartApi\\GameStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pkristof06\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\pkristof06\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

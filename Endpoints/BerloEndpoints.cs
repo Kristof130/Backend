@@ -1,11 +1,11 @@
 using System;
-using GameStore.Data;
-using GameStore.DTOS;
-using GameStore.Entities;
-using GameStore.Mapping;
+using Gokart.Data;
+using Gokart.DTOS;
+using Gokart.Entities;
+using Gokart.Mapping;
 using Microsoft.EntityFrameworkCore;
 
-namespace GameStore.Endpoints;
+namespace Gokart.Endpoints;
 
 public static class BerloEndpoints
 {

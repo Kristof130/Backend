@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 //Template!!!!!!!!!!!!!!!!!!!!!!!!!
-namespace GameStore.DTOS;
+namespace Gokart.DTOS;
 
 public record class UpdateGamedto(
     [Required][StringLength(50)]string Name,

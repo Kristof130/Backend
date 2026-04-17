@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using GameStore.Data;
-using GameStore.Endpoints;
+using Gokart.Data;
+using Gokart.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 

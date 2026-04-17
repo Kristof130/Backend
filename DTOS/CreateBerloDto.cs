@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace GameStore.DTOS;
+namespace Gokart.DTOS;
 
 public record class CreateBerloDto(
     [Required]  string Berlo_Neve

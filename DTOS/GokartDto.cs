@@ -1,4 +1,4 @@
-namespace GameStore.DTOS;
+namespace Gokart.DTOS;
 
 public record class GokartDto
 (

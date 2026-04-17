@@ -1,6 +1,6 @@
 using System;
 
-namespace GameStore.Entities;
+namespace Gokart.Entities;
 
 public class Berlo
 {
